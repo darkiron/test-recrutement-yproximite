@@ -1,0 +1,30 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block content %}
+  <h1><a href="{{ path('admin') }}">Administration</a></h1>
+  <h2><a href="{{ path('admin_articles_list') }}">Articles</a></h2>
+
+  {{ form_start(form) }}
+  {{ form_row(form.title) }}
+  {{ form_row(form.content, { attr: { rows: 10 }}) }}
+  <div class="row">
+    <div class="col-md-8">
+      {{ form_row(form.categories) }}
+    </div>
+    <div class="col-md-4">
+      {{ form_row(form.status) }}
+    </div>
+  </div>
+
+  <div class="text-center">
+    <a href="{{ path('admin') }}" class="btn btn-secondary">
+      {{ 'action.cancel'|trans }}
+    </a>
+    <button type="submit" class="btn btn-primary">
+      {{ 'action.edit'|trans }}
+    </button>
+  </div>
+  {{ form_end(form) }}
+{% endblock %}

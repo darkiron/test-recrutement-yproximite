@@ -1,0 +1,30 @@
+includes:
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+    - vendor/phpstan/phpstan-symfony/extension.neon
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+    - vendor/knplabs/doctrine-behaviors/phpstan-extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: max
+    paths:
+        - src
+        - tests/phpunit
+    excludes_analyse:
+        - config
+        - src/Migrations
+        - tests/phpspec
+        - tests/phpunit/bootstrap.php
+    bootstrapFiles:
+        - bin/phpunit.phar
+
+    inferPrivatePropertyTypeFromConstructor: true
+
+    symfony:
+        container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml
+        console_application_loader: tests/console-application.php
+
+    doctrine:
+        objectManagerLoader: tests/object-manager.php

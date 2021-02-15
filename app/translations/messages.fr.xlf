@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="fr" trgLang="fr">
+  <file id="messages.fr">
+    <unit id="pRdPIPt" name="heading.articles">
+      <segment>
+        <source>heading.articles</source>
+        <target>{0} 0 articles|{1} 1 article|[1,Inf[ %count% articles</target>
+      </segment>
+    </unit>
+    <unit id="kgGnVUe" name="menu.articles">
+      <segment>
+        <source>menu.articles</source>
+        <target>Articles</target>
+      </segment>
+    </unit>
+    <unit id="2IF6qMR" name="menu.categories">
+      <segment>
+        <source>menu.categories</source>
+        <target>Catégories</target>
+      </segment>
+    </unit>
+    <unit id="4_lV1Uk" name="menu.administration">
+      <segment>
+        <source>menu.administration</source>
+        <target>Administration</target>
+      </segment>
+    </unit>
+    <unit id="PqN7xld" name="action.article.read_more">
+      <segment>
+        <source>action.article.read_more</source>
+        <target>Lire la suite</target>
+      </segment>
+    </unit>
+    <unit id="rxiw4vD" name="heading.article.comments">
+      <segment>
+        <source>heading.article.comments</source>
+        <target>{0} 0 commentaires|{1} 1 commentaire|[1,Inf[ %count% commentaires</target>
+      </segment>
+    </unit>
+    <unit id="154MGnk" name="article.comments">
+      <segment>
+        <source>article.comments</source>
+        <target>{0} 0 commentaires|{1} 1 commentaire|[1,Inf[ %count% commentaires.</target>
+      </segment>
+    </unit>
+    <unit id="CLdlCQH" name="article_comment.written_by">
+      <segment>
+        <source>article_comment.written_by</source>
+        <target>Écrit par %fullName% le %at%.</target>
+      </segment>
+    </unit>
+     <unit id="CLdlCQH" name="article_comment.link">
+          <segment>
+            <source>article_comment.link</source>
+            <target>voir le détail</target>
+          </segment>
+        </unit>
+    <unit id="LVEuths" name="article.updated_at">
+      <segment>
+        <source>article.updated_at</source>
+        <target>Mise à jour %at%.</target>
+      </segment>
+    </unit>
+    <unit id="9VZ9FdL" name="label.article_comment.fullName">
+      <segment>
+        <source>label.article_comment.fullName</source>
+        <target>Nom complet</target>
+      </segment>
+    </unit>
+    <unit id="JmgdxiD" name="label.article_comment.email">
+      <segment>
+        <source>label.article_comment.email</source>
+        <target>Adresse e-mail</target>
+      </segment>
+    </unit>
+    <unit id="832mMd4" name="label.article_comment.content">
+      <segment>
+        <source>label.article_comment.content</source>
+        <target>Commentaire</target>
+      </segment>
+    </unit>
+    <unit id="0kmCzUT" name="action.article_comment.submit">
+      <segment>
+        <source>action.article_comment.submit</source>
+        <target>Envoyer</target>
+      </segment>
+    </unit>
+    <unit id="hpjKbpT" name="heading.article.write_comment">
+      <segment>
+        <source>heading.article.write_comment</source>
+        <target>Écrire un commentaire</target>
+      </segment>
+    </unit>
+    <unit id="v5pW5PE" name="heading.articles_in_category">
+      <segment>
+        <source>heading.articles_in_category</source>
+        <target>{0} 0 articles dans la catégorie « %categoryTitle% »|{1} 1 article dans la catégorie « %categoryTitle% »|[1,Inf[ %count% articles dans la catégorie « %categoryTitle% »</target>
+      </segment>
+    </unit>
+    <unit id="MykllWQ" name="heading.article_categories">
+      <segment>
+        <source>heading.article_categories</source>
+        <target>{0} 0 catégories|{1} 1 catégorie|[1,Inf[ %count% catégories</target>
+      </segment>
+    </unit>
+    <unit id="Oy_bcYv" name="category.articles">
+      <segment>
+        <source>category.articles</source>
+        <target>{0} 0 articles|{1} 1 article|[1,Inf[ %count% articles.</target>
+      </segment>
+    </unit>
+    <unit id="usKOrSn" name="action.category.browse">
+      <segment>
+        <source>action.category.browse</source>
+        <target>Parcourir</target>
+      </segment>
+    </unit>
+    <unit id="GADjR6H" name="category.created_at">
+      <segment>
+        <source>category.created_at</source>
+        <target>Créée %at%.</target>
+      </segment>
+    </unit>
+    <unit id="WzvAGsI" name="category.updated_at">
+      <segment>
+        <source>category.updated_at</source>
+        <target>Mise à jour %at%.</target>
+      </segment>
+    </unit>
+    <unit id="uJxPe9E" name="action.login">
+      <segment>
+        <source>action.login</source>
+        <target>Se connecter</target>
+      </segment>
+    </unit>
+    <unit id="0LH8hxO" name="heading.login">
+      <segment>
+        <source>heading.login</source>
+        <target>Connexion requise</target>
+      </segment>
+    </unit>
+    <unit id="9mcv_25" name="admin.articles.heading.status">
+      <segment>
+        <source>admin.articles.heading.status</source>
+        <target>Status</target>
+      </segment>
+    </unit>
+    <unit id="EUFD8L9" name="admin.articles.heading.title">
+      <segment>
+        <source>admin.articles.heading.title</source>
+        <target>Titre</target>
+      </segment>
+    </unit>
+    <unit id="N8vfYsM" name="admin.articles.heading.created_at">
+      <segment>
+        <source>admin.articles.heading.created_at</source>
+        <target>Crée le</target>
+      </segment>
+    </unit>
+    <unit id="fqy.WRW" name="admin.articles.heading.updated_at">
+      <segment>
+        <source>admin.articles.heading.updated_at</source>
+        <target>Édité le</target>
+      </segment>
+    </unit>
+    <unit id="k6uHbY6" name="flash.articles.deleted.success">
+      <segment>
+        <source>flash.articles.deleted.success</source>
+        <target>L'article a bien été supprimé.</target>
+      </segment>
+    </unit>
+    <unit id="ole4_rE" name="flash.articles.edited.success">
+      <segment>
+        <source>flash.articles.edited.success</source>
+        <target>L'article a bien été modifié.</target>
+      </segment>
+    </unit>
+    <unit id="7lD9qvA" name="label.article.title">
+      <segment>
+        <source>label.article.title</source>
+        <target>label.article.title</target>
+      </segment>
+    </unit>
+    <unit id="bJa_S6L" name="label.article.content">
+      <segment>
+        <source>label.article.content</source>
+        <target>Contenu</target>
+      </segment>
+    </unit>
+    <unit id="lgdYY.7" name="label.article.categories">
+      <segment>
+        <source>label.article.categories</source>
+        <target>Catégories</target>
+      </segment>
+    </unit>
+    <unit id="_4P_9xX" name="label.article.status">
+      <segment>
+        <source>label.article.status</source>
+        <target>Status</target>
+      </segment>
+    </unit>
+    <unit id="ovKkXwU" name="action.edit">
+      <segment>
+        <source>action.edit</source>
+        <target>Éditer</target>
+      </segment>
+    </unit>
+    <unit id="Qj1ElaL" name="action.cancel">
+      <segment>
+        <source>action.cancel</source>
+        <target>Annuler</target>
+      </segment>
+    </unit>
+    <unit id="wBTFKFR" name="menu.logout">
+      <segment>
+        <source>menu.logout</source>
+        <target>Déconnexion</target>
+      </segment>
+    </unit>
+    <unit id="wBTFKFR" name="comment.from">
+          <segment>
+            <source>comment.from</source>
+            <target>commentaire de l'article</target>
+          </segment>
+     </unit>
+      <unit id="wBTFKFR" name="comments.title">
+                  <segment>
+                    <source>ccomments.title</source>
+                    <target>Tous les commentaires</target>
+                  </segment>
+       </unit>
+  </file>
+</xliff>

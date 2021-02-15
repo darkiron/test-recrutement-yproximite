@@ -1,0 +1,50 @@
+App\Entity\ArticleCategory:
+    article_category_{1..4}:
+        title: 'Catégorie <current()>'
+
+App\Entity\Article:
+    article (template):
+        author: '@admin_1'
+        status: '<randomElement(<(App\Entity\Article::STATUSES)>)>'
+        categories: '<randomElements([ @article_category_1, @article_category_2, @article_category_3, @article_category_4 ], 2)>'
+        title: '<fr_FR:realText(20)> ($status)'
+        content: '<paragraphs(3, true)>'
+
+    article_{1..2} (extends article):
+        status: '<(App\Entity\Article::STATUS_PUBLISHED)>'
+
+    article_{3..4} (extends article):
+        status: '<(App\Entity\Article::STATUS_DRAFT)>'
+
+    article_{2..10} (extends article): null
+
+App\Entity\ArticleComment:
+    article_comment (template):
+        fullName: '<fr_FR:firstName() fr_FR:lastName()>'
+        email: '<email()>'
+        content: '<fr_FR:paragraph()>'
+
+    article_comment_1 (extends article_comment):
+        article: '@article_1'
+    article_comment_2 (extends article_comment):
+        article: '@article_1'
+    article_comment_3 (extends article_comment):
+        article: '@article_1'
+
+    article_comment_4 (extends article_comment):
+        article: '@article_2'
+
+    article_comment_5 (extends article_comment):
+        article: '@article_3'
+    article_comment_6 (extends article_comment):
+        article: '@article_3'
+
+    article_comment_7 (extends article_comment):
+        article: '@article_4'
+
+    article_comment_8 (extends article_comment):
+        article: '@article_5'
+
+    article_comment_9 (extends article_comment):
+        article: '@article_7'
+

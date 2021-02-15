@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block content %}
+        <main>
+            <h4>{{ 'heading.article.comments'|trans({ '%count%': comments|length }) }}</h4>
+            {% for comment in comments %}
+                <div class="card mb-3">
+                    <header>
+                        <header>
+                            <h1>{{ 'comment.from'|trans }} : {{ comment.article.title }}</h1>
+                        </header>
+                    </header>
+                    <div class="d-flex">
+                        <div class="p-3">
+                            <img
+                                    src="https://avatars.dicebear.com/api/identicon/{{ [comment.fullName, comment.email]|filter(v => v is not null)|join('') }}.svg"
+                                    width="80px"
+                                    height="80px"
+                            >
+                        </div>
+                        <div class="flex-fill">
+                            <div class="card-body">
+                                <main>{{ comment.content|nl2br }}</main>
+                                <hr>
+                                <footer>
+                  <span class="text-muted">
+                    {{ 'article_comment.written_by'|trans({
+                        '%fullName%': comment.fullName ?? 'Anonymous',
+                        '%at%': comment.createdAt|format_datetime()
+                    }) }}
+                    <a href="{{ path('show_comment', { id: comment.id }) }}">{{ 'article_comment.link'|trans }}</a>
+                  </span>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+
+        </main>
+{% endblock %}

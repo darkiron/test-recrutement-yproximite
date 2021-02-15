@@ -1,0 +1,50 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block content %}
+  <h1><a href="{{ path('admin') }}">Administration</a></h1>
+  <h2>Articles</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>{{ 'admin.articles.heading.status'|trans }}</th>
+        <th>{{ 'admin.articles.heading.title'|trans }}</th>
+        <th>{{ 'admin.articles.heading.created_at'|trans }}</th>
+        <th>{{ 'admin.articles.heading.updated_at'|trans }}</th>
+        <th style="width: 1px"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for article in articles %}
+        <tr>
+          <td>
+            {{ article.id }}
+          </td>
+          <td>
+            <span class="badge badge-{{ article.isPublished ? 'success' : 'warning' }}">
+              {{ article.status }}
+            </span>
+          </td>
+          <td>{{ article.title }}</td>
+          <td>{{ article.createdAt|format_datetime }}</td>
+          <td>{{ article.updatedAt|format_datetime }}</td>
+          <td class="text-nowrap">
+              <a href="{{ path('admin_articles_edit', { id: article.id }) }}" class="btn btn-primary btn-sm">
+                <i class="fa fa-edit"></i>
+              </a>
+
+              <form method="post" action="{{ path('admin_articles_delete', { id: article.id }) }}" class="d-inline-block">
+                <input type="hidden" name="_method" value="DELETE" />
+                <button type="submit" class="btn btn-danger btn-sm">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

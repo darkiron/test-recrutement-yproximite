@@ -1,0 +1,8 @@
+App\Entity\User:
+    admin_1:
+        firstName: John
+        lastName: Smith
+        email: john@smith.com
+        password: <encodePassword(@admin_1, 'test')>
+        roles: <(['ROLE_USER', 'ROLE_ADMIN'])>
+        createdAt: <(new DateTime('2019-01-01 12:00:00'))>

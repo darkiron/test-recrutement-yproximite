@@ -1,0 +1,2 @@
+[Sun Feb 14 17:07:36.035126 2021] [proxy_fcgi:error] [pid 10:tid 140477097568000] [client 172.24.0.1:41942] AH01071: Got error 'PHP message: 2021-02-14T17:07:36+00:00 [critical] Uncaught Error: syntax error, unexpected '}', expecting ';'', referer: http://localhost/index.php/admin/articles
+[Sun Feb 14 17:07:40.622461 2021] [proxy_fcgi:error] [pid 92:tid 140476963350272] [client 172.24.0.1:41948] AH01071: Got error 'PHP message: 2021-02-14T17:07:40+00:00 [critical] Uncaught Error: syntax error, unexpected '}', expecting ';''

@@ -1,0 +1,47 @@
+# Vagrant
+/.vagrant/
+
+# Ansible
+/ansible/*.retry
+/ansible/group_vars/*_local.yml
+/ansible/roles/.downloads
+/ansible/roles/manala.*
+!app/ansible/roles/.gitkeep
+
+# PHP-CS-Fixer
+/.php_cs.cache
+
+# Cypress
+/tests/cypress/screenshots/
+/tests/cypress/videos/
+
+/bin/*
+!/bin/.gitkeep
+!/bin/console
+# Normallement ce binaire `symfony` ne devrait pas être installé localement.
+# On l'utilise dans le cadre du test afin de vérifier la vulnérabilité des dépendances installées.
+# Cette vérification se fait automatiquement lors d'un `composer install`, normalement ça devrait être dans le CI mais le candidat n'y a pas accès.
+!/bin/symfony
+!/bin/*.phar
+!/var/.gitkeep
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/cache
+/var/log
+/vendor/
+###< symfony/framework-bundle ###
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###

@@ -1,0 +1,22 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method App\\\\Form\\\\ArticleCommentCreateType\\:\\:buildForm\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Form/ArticleCommentCreateType.php
+
+		-
+			message: "#^Method App\\\\Form\\\\ArticleCommentCreateType\\:\\:configureOptions\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Form/ArticleCommentCreateType.php
+
+		-
+			message: "#^Method App\\\\Form\\\\ArticleEditType\\:\\:buildForm\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Form/ArticleEditType.php
+
+		-
+			message: "#^Method App\\\\Form\\\\ArticleEditType\\:\\:configureOptions\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: src/Form/ArticleEditType.php
+

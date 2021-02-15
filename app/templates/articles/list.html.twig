@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block content %}
+  <h1>{{ 'heading.articles'|trans({ '%count%': articles|length }) }}</h1>
+  <div class="row row-cols-1 row-cols-md-3">
+    {% for article in articles %}
+      <div class="col mb-4">
+        {% include 'articles/_item_card.html.twig' with  { article: article } only %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
